@@ -1,16 +1,16 @@
 class Lotar < Formula
   desc "Local-first task and project management CLI"
   homepage "https://github.com/localtaskrepo/lotar"
-  version "0.7.0"
+  version "0.7.1"
   license "ISC"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/localtaskrepo/lotar/releases/download/v0.7.0/lotar-v0.7.0-macos-arm64.tar.gz"
-      sha256 "97192ec7e16359c95dcc70fae6f75f6a460a7d14d289878e4736ddd2fe380f89"
+      url "https://github.com/localtaskrepo/lotar/releases/download/v0.7.1/lotar-v0.7.1-macos-arm64.tar.gz"
+      sha256 "b56cfb5aba489f77441c65c86407c1ef8ab48b02e4c12696c2fb5c791fefa104"
     else
-      url "https://github.com/localtaskrepo/lotar/releases/download/v0.7.0/lotar-v0.7.0-macos-x64.tar.gz"
-      sha256 "405aac8649f460cecae07c5f78b65e9cd5d93e624cdf81e049551958496469df"
+      url "https://github.com/localtaskrepo/lotar/releases/download/v0.7.1/lotar-v0.7.1-macos-x64.tar.gz"
+      sha256 "3d1653190c9da803786bfbfd354e7c97270da78a50ccbf8b4d1fcf289b625101"
     end
   end
 
