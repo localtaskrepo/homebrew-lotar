@@ -1,16 +1,16 @@
 class Autospec < Formula
   desc "Converge markdown specs with local AI coding agent CLIs"
   homepage "https://github.com/localtaskrepo/autospec"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/localtaskrepo/autospec/releases/download/v0.1.0/autospec-v0.1.0-macos-arm64.tar.gz"
-      sha256 "6640ad006f9122cb91b05ee83a727f194a3514f260d3d2568b121b8dfa73d13a"
+      url "https://github.com/localtaskrepo/autospec/releases/download/v0.2.0/autospec-v0.2.0-macos-arm64.tar.gz"
+      sha256 "ab6dcaa8443e7f94585f49feff19e949dd8a6cdf626cd715c5c44317442b9955"
     else
-      url "https://github.com/localtaskrepo/autospec/releases/download/v0.1.0/autospec-v0.1.0-macos-x64.tar.gz"
-      sha256 "ac04037f433c268a2a93cc82f4bf7e1451498e22a7a1e05f30137c6f599fac85"
+      url "https://github.com/localtaskrepo/autospec/releases/download/v0.2.0/autospec-v0.2.0-macos-x64.tar.gz"
+      sha256 "bd42d9105e415a4f3bfd99ea2cb6723e5dda8f7d572bafa687d25e65a857eeb4"
     end
   end
 
