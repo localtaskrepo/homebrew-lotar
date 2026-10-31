@@ -6,22 +6,26 @@ Custom Homebrew tap for the [Lotar](https://github.com/localtaskrepo/lotar) and 
 
 ```bash
 brew tap localtaskrepo/lotar
+brew trust localtaskrepo/lotar
 brew install lotar
 brew install autospec
 ```
 
-Once a release is tagged, Homebrew will download the matching macOS binary from the
-corresponding GitHub Releases page and place it in your PATH.
+Homebrew 6 and newer refuse formulae from third-party taps until you trust them, so `brew trust` is
+needed once per machine. Older Homebrew has no `brew trust` command; skip that line.
 
-- lotar releases: [localtaskrepo/lotar](https://github.com/localtaskrepo/lotar/releases)
-- autospec releases: [localtaskrepo/autospec](https://github.com/localtaskrepo/autospec/releases)
+Homebrew downloads the prebuilt binary from the matching GitHub release and puts it on your PATH:
 
-## Updating the Formula
+- lotar: macOS (Apple Silicon and Intel) and Linux (x64 and arm64, static builds that run on any
+  distribution). Releases: [localtaskrepo/lotar](https://github.com/localtaskrepo/lotar/releases)
+- autospec: macOS (Apple Silicon and Intel). Releases:
+  [localtaskrepo/autospec](https://github.com/localtaskrepo/autospec/releases)
 
-1. Publish a new `vX.Y.Z` release from the main repository.
-2. Copy the sha256 values for the relevant macOS assets.
-3. Edit the matching formula in `Formula/` with the new version, URLs, and checksums.
-4. Commit the change and push to `main`.
+Upgrade with `brew upgrade lotar` or `brew upgrade autospec`.
 
-Future automation can update this formula from the primary release workflow, but manual updates
-are sufficient to get started.
+## Updating the Formulae
+
+The formulae are updated automatically: each project's release workflow rewrites its file in `Formula/`
+with the new version, URLs, and checksums and pushes the commit to `main`. Change a formula in the
+release workflow of its project (for lotar, `.github/workflows/release.yml`), not here, or the next
+release overwrites the edit.
