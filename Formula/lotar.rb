@@ -1,26 +1,26 @@
 class Lotar < Formula
   desc "Local-first task and project management CLI"
   homepage "https://github.com/localtaskrepo/lotar"
-  version "0.15.4"
+  version "0.15.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/localtaskrepo/lotar/releases/download/v0.15.4/lotar-v0.15.4-macos-arm64.tar.gz"
-      sha256 "f05243379f4bd429c6f89dcbd36a64b2ccd352fc809745a053559b3df21d2948"
+      url "https://github.com/localtaskrepo/lotar/releases/download/v0.15.5/lotar-v0.15.5-macos-arm64.tar.gz"
+      sha256 "7236070d9e79f13bc6e9de7b60d589a18a30212e36beddc7ae22d4d6404069ab"
     else
-      url "https://github.com/localtaskrepo/lotar/releases/download/v0.15.4/lotar-v0.15.4-macos-x64.tar.gz"
-      sha256 "35d2bb8e384978d30084a5efbfeebb2b871c3f4773a6d8111341cc44b4186313"
+      url "https://github.com/localtaskrepo/lotar/releases/download/v0.15.5/lotar-v0.15.5-macos-x64.tar.gz"
+      sha256 "cad6c733f470b90c2587546f16f5369fa8447dddf311199c542dea339fc5e6c8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/localtaskrepo/lotar/releases/download/v0.15.4/lotar-v0.15.4-linux-musl-arm64.tar.gz"
-      sha256 "26095de808eb6b2fd318e277584e6b4d014dea54fec43b800d08e2ab1fdacf18"
+      url "https://github.com/localtaskrepo/lotar/releases/download/v0.15.5/lotar-v0.15.5-linux-musl-arm64.tar.gz"
+      sha256 "6e77cd334fe6a7eb901ffebc0e7a2f84f6a2716e52c82f87bee2a9086da2afb7"
     else
-      url "https://github.com/localtaskrepo/lotar/releases/download/v0.15.4/lotar-v0.15.4-linux-musl-x64.tar.gz"
-      sha256 "2c6a725ed7ee666e6e721ae6b38cf8bd41393e93320fac5197d0b7eb4e14452a"
+      url "https://github.com/localtaskrepo/lotar/releases/download/v0.15.5/lotar-v0.15.5-linux-musl-x64.tar.gz"
+      sha256 "f85080c46826d9f8123633e3e14abf8e5f08dded69e5fcc8ad7226265c102784"
     end
   end
 
